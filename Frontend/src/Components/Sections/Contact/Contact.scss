@@ -1,0 +1,44 @@
+.app__contact-cards {
+    
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin-top: 2rem;
+   
+
+   
+
+    img{
+        width: 250px;
+
+        @media screen and (max-width:390px) {
+            width: 170px;
+        }
+
+        @media screen and (max-width:768px) {
+            width: 220px;
+        }
+
+    }
+
+
+    .app__contact-card{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 1rem;
+
+       
+        
+        
+    }
+}
+
+.app__contact-form{
+    
+    flex-direction: column;
+}

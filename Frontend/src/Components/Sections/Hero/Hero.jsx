@@ -2,7 +2,9 @@ import React from 'react'
 import {motion} from "framer-motion"
 import "./Hero.scss"
 import {HiArrowDown} from "react-icons/hi"
-export default function Hero() {
+import AppWrap from '../../../Wrapper/AppWrap'
+
+const Hero = () => {
   return (
     <div className='app__hero flex flex-col justify-center align-center items-center lg:flex-row gap-10'>
         <motion.div
@@ -65,3 +67,5 @@ export default function Hero() {
     </div>
   )
 }
+
+export default AppWrap(Hero, "home", "../src/Assets/HeroBg.png")

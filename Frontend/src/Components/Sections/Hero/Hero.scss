@@ -1,14 +1,12 @@
 .app__hero{
-    height: 100vh;
-    background-image: url("../src/Assets/HeroBg.png");
-    background-repeat: repeat;
-    background-size: cover;
+   
+  
     color: var(--gray-color);
 }
 
 .app__hero-info{
     font-size: 40px;
-    padding: 0 2rem;
+    padding: 0 1rem;
 
     @media screen and (max-width:700px) {
         font-size: 33px;
