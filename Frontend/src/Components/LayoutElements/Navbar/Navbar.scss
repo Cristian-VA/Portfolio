@@ -2,12 +2,12 @@
 
 .app__navbar{
      width: 100%;
-
+    padding: .5rem 1rem;
      display: flex;
      justify-content: space-between;
      align-items: center;
      
-     padding: 1rem 2rem;
+     
      background-color: rgb(255, 255, 255, 0.25);
      color: var(--gray-color);
      -webkit-backdrop-filter: blur(5px);

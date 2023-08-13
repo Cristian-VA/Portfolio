@@ -18,8 +18,8 @@ const Abouts = () => {
   return (
     <motion.div 
      className="app__about app__flex"
-     whileInView={{x: [100, 0], opacity:[0,1]}}
-     transition={{duration: 0.5}}>
+     whileInView={{opacity:[0,1]}}
+     transition={{duration: 0.8}}>
         <div className="flex flex-col lg:flex-row gap-10">
          
 
