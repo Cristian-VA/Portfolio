@@ -1,25 +1,15 @@
 import React, {useState , useEffect} from 'react'
-import {motion} from "framer-motion"
 import {HiArrowRight} from "react-icons/hi"
 import "./About.scss"
 import AppWrap from '../../../Wrapper/AppWrap'
 
 const Abouts = () => {
 
-    const [animationCompleted, setAnimationCompleted] = useState(false);
-
-    const handleViewportEnter = () => {
-      if (!animationCompleted) {
-        setAnimationCompleted(true);
-      }
-    };
-
 
   return (
-    <motion.div 
+    <div 
      className="app__about app__flex"
-     whileInView={{opacity:[0,1]}}
-     transition={{duration: 0.8}}>
+    >
         <div className="flex flex-col lg:flex-row gap-10">
          
 
@@ -41,7 +31,7 @@ const Abouts = () => {
 
         </div>
        
-    </motion.div>
+    </div>
 
   )
 }

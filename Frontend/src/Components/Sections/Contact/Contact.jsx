@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import AppWrap from '../../../Wrapper/AppWrap'
 import {motion} from "framer-motion"
-import { client  } from "../../../client.js";
+import { client  } from "../../../client.js"
 
 import "./Contact.scss"
 const Contact = () => {
@@ -40,6 +40,7 @@ const Contact = () => {
 
   const RefreshForm = () => {
     setIsFormSubmitted(false)
+    setFormData({name: "", email: "", message: ""})
   }
 
  
@@ -95,7 +96,7 @@ const Contact = () => {
 
    
     ): (
-      <div className='flex flex-col justify-between h-full '>
+      <div className='flex flex-col justify-between h-full max-h-96 '>
         
         <div className='mt-10'>
         <h1 className='text-center  text-2xl'> Message received! </h1>
