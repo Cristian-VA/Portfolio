@@ -1,0 +1,37 @@
+.app__projects-img{
+    width: 500px;
+    
+    @media screen and (max-width: 400px){
+        width: 300px;
+        
+    }
+
+    @media screen and (max-width: 549px) and (min-width: 400px){
+        width: 360px;
+        
+    }
+
+}
+
+.app__projects-porfolio{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.app__projects-info-container{
+    width: auto;
+    max-width: 500px;
+    height: 350px;
+    position: relative;
+    border-bottom: #475569 3px solid;
+   
+
+    @media (min-width: 1024px) {
+        border: #475569 3px solid;
+        background-image: url("../src/Assets/Projectcontainer.png");
+        background-size: 'cover';
+        background-repeat: 'repeat';
+ 
+    }
+}

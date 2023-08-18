@@ -1,0 +1,28 @@
+/* CustomSliderStyles.css */
+
+/* Override the background color of navigation bullets */
+.awssld__bullets button {
+  background-color: #0284C760;
+  width: 8px; /* Desired width for the bullets */
+  height: 8px; /* Desired height for the bullets */
+}
+
+
+.awssld__content {
+  background-color: #fff; /* Desired background color */
+ 
+}
+
+
+
+.awssld__container {
+  z-index: -1; /* Set a negative value to place it behind */
+  position: relative;
+}
+
+
+/* Override the color of navigation arrows */
+.awssld__controls__arrow-left,
+.awssld__controls__arrow-right {
+  color: #0284C7;
+}
