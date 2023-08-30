@@ -45,10 +45,10 @@ function Skills() {
         </motion.div>
       ))}
       </motion.div>
-      <img src="../src/Assets/SkillsImg.png" alt=""  className='app__skills_img'/>
+      <img src="../../Images/SkillsImg.png" alt=""  className='app__skills_img'/>
      </div>
     </div>
   )
 }
 
-export default  AppWrap(Skills, "skills", "")
+export default  AppWrap(Skills, "skills", "../../Images/skillsBg.png" )

@@ -53,12 +53,12 @@ const Contact = () => {
     <div className='app__contact-cards'>
 
         <div className='app__contact-card'>
-            <img src="../src/Assets/ContactEmail.png" alt="" />
+            <img src="../../Images/ContactEmail.png" alt="" />
             <a href="mailto:cristian5vega@hotmail.com" className='text-xl mt-4'> <span className='text-sky-600'>cristian5vega</span>@hotmail.com </a>
         </div>
 
         <div className='app__contact-card'>
-            <img src="../src/Assets/ContactPhone.png" alt="" />
+            <img src="../../Images/ContactPhone.png" alt="" />
             <a href="tel:+51949056056" className="text-xl mt-4"> <span className='text-sky-600'>+51 </span> 949 056 056 </a>
         </div>
 
@@ -103,7 +103,7 @@ const Contact = () => {
         
         <h1 className='text-center  text-xl mt-2  mb-10 font-semibold text-sky-600'>Thanks for Reaching out</h1>
         </div>
-        <img src="../src/Assets/ContactSuccess.png" className="block mx-auto"alt="" />
+        <img src="../../Images/ContactSuccess.png" className="block mx-auto"alt="" />
         
 
         <button 
@@ -118,4 +118,4 @@ const Contact = () => {
     </>
   )
 }
-export default AppWrap(Contact, "contact", "../src/Assets/ContactBg.png")
+export default AppWrap(Contact, "contact", "../../Images/ContactBg.png")

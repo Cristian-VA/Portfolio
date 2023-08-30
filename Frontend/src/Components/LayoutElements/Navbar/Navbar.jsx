@@ -13,7 +13,7 @@ export default function Header() {
     <nav className='app__navbar'>
     
         <div className='app__navbar-logo'>
-            <img  src={"../src/Assets/Logo.png"}/>
+            <img  src={"../../Images/Logo.png"}/>
             <div className='flex flex-col'>
                 <h1 className='text-slate-600 uppercase font-bold text-md md:text-xl'> Cristian</h1>
                 <h2 className='text-sky-600 uppercase text-lg md:text-2xl font-bold'>Dev</h2>

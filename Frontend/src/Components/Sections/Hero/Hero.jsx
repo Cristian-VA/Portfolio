@@ -23,8 +23,8 @@ const Hero = () => {
                                 <motion.div className='flex mt-3 gap-6'
                                     whileInView={{opacity:[0,1]}}
                                     transition={{duration: 0.5, delay:1}}>
-                                                <button className='bg-sky-600 px-3 py-1 transition hover:bg-slate-600 text-white opacity-90'>Contact</button>
-                                                <button className=' border-2 border-sky-600 px-3 py-1 transition hover:text-sky-600 text-slate-700 opacity-90'>View My Work </button>
+                                                <a href="#contact" className='bg-sky-600 border-2 border-sky-600 cursor-pointer  hover:border-slate-600 px-3 my-auto py-1 transition hover:bg-slate-600 text-white opacity-90'>Contact</a>
+                                                <a href="#work" className=' border-2 cursor-pointer border-sky-600 px-3 py-1 my-auto transition hover:text-sky-600 text-slate-700 opacity-90'>View My Work </a>
                                  </motion.div>
                                  
                 </motion.div>
@@ -62,10 +62,10 @@ const Hero = () => {
         <motion.div
         whileInView={{scale:[0,1]}}
         transition={{duration:1, ease:"easeInOut"}}>
-        <img className='w-44 md:w-80'  src={"../src/Assets/HeroImg.png"}/>
+        <img className='w-44 md:w-80'  src={"../../Images/HeroImg.png"}/>
         </motion.div>
     </div>
   )
 }
 
-export default AppWrap(Hero, "home", "../src/Assets/HeroBg.png")
+export default AppWrap(Hero, "home", "../../Images/HeroBg.png")

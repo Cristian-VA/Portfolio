@@ -3,7 +3,8 @@ import React,{useEffect, useState} from 'react'
 import AppWrap from '../../../Wrapper/AppWrap'
 import { motion }  from "framer-motion"
 import { client, urlFor  } from "../../../client.js"
-
+import { IoLogoGithub } from "react-icons/io5";
+import {HiArrowRight} from "react-icons/hi"
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import "./Projects.scss"
@@ -40,7 +41,7 @@ console.log(works[0]?.imgUrl)
           <div className='app__projects-img app__flex flex-col '>
 
           <h1 className='text-slate-600 font-semibold text-lg text-center  lg:hidden block'>{item.title}</h1>
-          <AwesomeSlider className='mb-6 lg:border-slate-600 lg:border-4 lg:py-2'>
+          <AwesomeSlider className='mb-6 lg:border-slate-600 border-4  border-transparent lg:py-2'>
         {item?.imgUrl.map((imageUrl, index) => (
           <div key={index}>
             <img src={urlFor(imageUrl)} alt={`Image ${index + 1}`} />
@@ -52,7 +53,7 @@ console.log(works[0]?.imgUrl)
           </div>
 
           <div className='app__projects-info-container'>
-          <h1 className='text-slate-600 font-semibold text-lg text-center py-4 hidden lg:block'>{item.title}</h1>
+          <h1 className='text-slate-600 font-semibold text-xl text-center py-4 hidden lg:block'>{item.title}</h1>
 
           <div className='flex gap-2 px-6 mb-6 mt-6 lg:mt-0'>
             {item?.tags.map((tag, index) =>( 
@@ -60,13 +61,19 @@ console.log(works[0]?.imgUrl)
             ))}
           </div>
 
-          <p className='px-6 text-justify text-sm '>{item.description}</p>
+          <p className='px-6 text-justify text-sm lg:text-md text-slate-700 lg:h-28 '>{item.description}</p>
 
          
-          <button className='block ml-6 bg-sky-600 px-3 py-1 transition w-36 hover:bg-slate-600 text-white opacity-90 my-5' > Live demo</button>
+          <a href={item.projectLink} target="_blank" className=' border-2 border-sky-600 px-3 py-1 cursor-pointer transition hover:text-sky-600 text-slate-700 opacity-90 my-4 w-32  ml-6 flex gap-2'>
+                    <h1> Live Demo </h1>
+                    < HiArrowRight className='my-auto'/>
+                    </a>
           
           
-          <button className='block ml-6 bg-sky-600 px-3 py-1 transition w-36 hover:bg-slate-600 text-white opacity-90'> Githup Repo</button>
+                    <a href={item.codeLink}  target="_blank" className=' bg-slate-600 px-3 py-1 transition cursor-pointer hover:bg-slate-600 text-white opacity-90 ml-6 flex gap-2 w-32'>
+                    <h1> View Code </h1>
+                    < IoLogoGithub className='my-auto text-lg'/>
+                    </a>
 
           <img src={urlFor(item.icon)} className='absolute bottom-0 right-14' alt="" />
           </div>
@@ -82,5 +89,5 @@ console.log(works[0]?.imgUrl)
 }
 
 
-export default  AppWrap(Projects, "work", "../src/Assets/ProjectsBg.png")
+export default  AppWrap(Projects, "work", "../../Images/ProjectsBg.png")
 
