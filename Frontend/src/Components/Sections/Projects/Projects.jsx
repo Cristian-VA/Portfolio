@@ -6,6 +6,8 @@ import { client, urlFor  } from "../../../client.js"
 import { IoLogoGithub } from "react-icons/io5";
 import {HiArrowRight} from "react-icons/hi"
 import AwesomeSlider from 'react-awesome-slider';
+import {Link} from "react-router-dom"
+
 import 'react-awesome-slider/dist/styles.css';
 import "./Projects.scss"
 import "./Slider.scss"
@@ -24,7 +26,7 @@ function Projects() {
   })
 }, [])
 
-console.log(works[0]?.imgUrl)
+
 
 
   return (
@@ -78,11 +80,15 @@ console.log(works[0]?.imgUrl)
           <img src={urlFor(item.icon)} className='absolute bottom-0 right-14' alt="" />
           </div>
 
+          
+
           </div>
       ))}
 
 
       </motion.div>
+
+      <Link to={"/extra-projects"}> HELLO</Link>
       
     </>
   )

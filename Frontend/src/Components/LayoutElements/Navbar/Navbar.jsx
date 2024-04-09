@@ -2,8 +2,11 @@ import React, {useState} from 'react'
 import { BiMenu, BiX } from "react-icons/bi";
 import { motion } from "framer-motion"
 import "./Navbar.scss"
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
+    const {pathname} = useLocation()
+   
 
     const [toggle, setToggle] = useState(false)
 
@@ -11,6 +14,7 @@ export default function Header() {
 
   return (
     <nav className='app__navbar'>
+        
     
         <div className='app__navbar-logo'>
             <img  src={"../../Images/Logo.png"}/>
@@ -19,7 +23,8 @@ export default function Header() {
                 <h2 className='text-sky-600 uppercase text-lg md:text-2xl font-bold'>Dev</h2>
             </div>
         </div>
-        <ul className='app__navbar-links'>
+
+        {pathname === "/" && <ul className='app__navbar-links'>
             {["home", "about", "work", "skills", "contact"].map((link) =>(
                 <li key={`link-${link}`} className='app__flex p-text'>
                       
@@ -27,9 +32,9 @@ export default function Header() {
                     
                 </li>
             ))}
-        </ul>
+        </ul>}
        
-       <div className='app__navbar-menu'>
+      {pathname === "/" && <div className='app__navbar-menu'>
                 <BiMenu onClick={() => setToggle(true)}/>
 
                 { toggle?  (
@@ -55,7 +60,9 @@ export default function Header() {
                         </motion.div>   
                     </div>
                 ): ""}
-       </div>
+       </div>}
+
+      
         
 
     </nav>
