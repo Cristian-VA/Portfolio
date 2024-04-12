@@ -72,7 +72,7 @@ function Projects() {
                     </a>
           
           
-                    <a href={item.codeLink}  target="_blank" className=' bg-slate-600 px-3 py-1 transition cursor-pointer hover:bg-slate-600 text-white opacity-90 ml-6 flex gap-2 w-32'>
+                    <a href={item.codeLink}  target="_blank" className=' bg-slate-600 px-3 py-1 transition cursor-pointer  text-white opacity-90 ml-6 flex gap-2 w-32 hover:bg-slate-700'>
                     <h1> View Code </h1>
                     < IoLogoGithub className='my-auto text-lg'/>
                     </a>
@@ -88,7 +88,7 @@ function Projects() {
 
       </motion.div>
 
-      <Link to={"/extra-projects"}> HELLO</Link>
+      <Link to={"/extra-projects"} className=' border-2 border-sky-600 px-3 py-1 cursor-pointer transition hover:text-sky-600 text-slate-700 opacity-90 my-4  ml-6 flex gap-2'> View older Projects</Link>
       
     </>
   )
